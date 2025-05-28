@@ -35,3 +35,14 @@ values ('Carnivorus') , ('Herbivorus')
 
 Select *
 from Species
+
+
+Use  Cars_store
+
+Select *
+from dbo.used_cars_data AS cars
+
+Select Name , Location, Price
+from dbo.used_cars_data
+where price > 1000000
+order by Price Desc
