@@ -1,5 +1,7 @@
 Create Database learning
 
+Use learning
+
 Create Table Student_Register (
     id int,
     First_name varchar (25),
@@ -46,3 +48,12 @@ Select Name , Location, Price
 from dbo.used_cars_data
 where price > 1000000
 order by Price Desc
+
+Select Distinct *
+from dbo.used_cars_data
+
+select Name , mileage , Price
+from dbo.used_cars_data
+where location  = 'Delhi'
+
+
