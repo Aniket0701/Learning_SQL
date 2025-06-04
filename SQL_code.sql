@@ -56,4 +56,49 @@ select Name , mileage , Price
 from dbo.used_cars_data
 where location  = 'Delhi'
 
+Backup database learning
+to disk = 'C:\Users\HP\Documents\backup\learning.bak'
 
+Use  learning
+
+create table Report(Roll_no int , Name Varchar(50), Marks int )
+
+select *
+from Report
+
+insert into Report values(01, 'Aniket shukla', 80)
+
+insert into Report values(02,'Sonal Shukla' , 90) , (03 ,'Namrata Shukla' , 100 )
+
+select * from Report
+
+update Report
+set Roll_no = 07 
+where Marks = 80
+
+Select * from Report
+
+Alter table Report
+Add School varchar(50)
+
+alter table Report
+Drop column School
+
+Select * from Report
+
+Exec sp_rename 'Report.Roll_no' , 'RollNo' , 'column'
+
+Select * from Report
+
+Alter table Report
+alter column RollNo int not null
+
+Alter table Report
+add CONSTRAINT PK_RollNo Primary key (RollNO)
+
+Select * from Report
+
+Alter table Report
+Drop CONSTRAINT PK_RollNo
+
+Select * from Report
